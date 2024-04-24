@@ -18,6 +18,7 @@ logs
 .fleet
 .idea
 /TODO
+/GIT-TODO
 /bin
 
 # Ignore test-related files
