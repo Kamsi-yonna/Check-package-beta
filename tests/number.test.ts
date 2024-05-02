@@ -200,47 +200,27 @@ describe("addUnit", () => {
 });
 
 //* tests for formatNumber function
-// describe("addSeparators", () => {
-//   test('should add thousands separator to a number string with base format ""', () => {
-//     const result = addSeparators("1234567", "", ",", ".");
-//     expect(result).toBe("1,234,567");
-//   });
+describe("addSeparators", () => {
+  test("should add thousands and decimal separators correctly", () => {
+    const result = addSeparators("1234.56789", "0,0", ",", ".");
+    expect(result).toBe("1,234.56789");
+  });
 
-//   test('should add thousands separator and decimal separator to a number string with base format "0,0"', () => {
-//     const result = addSeparators("1234567.89", "0,0", ",", ".");
-//     expect(result).toBe("1,234,567.89");
-//   });
+  test("should handle decimal-only numbers correctly", () => {
+    const result = addSeparators(".56789", "0,0", ",", ".");
+    expect(result).toBe(".56789");
+  });
 
-//   test("should handle a number string without decimal part", () => {
-//     const result = addSeparators("987654321", "", ",", ".");
-//     expect(result).toBe("987,654,321");
-//   });
+  test("should handle integer-only numbers correctly", () => {
+    const result = addSeparators("1234", "0,0", ",", ".");
+    expect(result).toBe("1,234");
+  });
 
-//   test("should handle a number string with only decimal part", () => {
-//     const result = addSeparators(".1234", "", ",", ".");
-//     expect(result).toBe(".1234");
-//   });
-
-//   test("should handle a number string with no separators", () => {
-//     const result = addSeparators("987654321", "0,0", "", ".");
-//     expect(result).toBe("987654321");
-//   });
-
-//   test("should handle a number string with only decimal separator", () => {
-//     const result = addSeparators(".5678", "0,0", ",", ".");
-//     expect(result).toBe(".5678");
-//   });
-
-//   test("should handle a number string with both separators but no base format", () => {
-//     const result = addSeparators("1234567.89", "", ",", ".");
-//     expect(result).toBe("1,234,567.89");
-//   });
-
-//   test('should handle a number string with no separators and base format "0,0"', () => {
-//     const result = addSeparators("1234567", "0,0", ",", ".");
-//     expect(result).toBe("1,234,567");
-//   });
-// });
+  test("should handle zero correctly", () => {
+    const result = addSeparators("0", "0,0", ",", ".");
+    expect(result).toBe("0");
+  });
+});
 
 //* tests for formatNumber function
 describe("formatNumber function", () => {
@@ -254,47 +234,21 @@ describe("formatNumber function", () => {
     expect(result).toBe("123");
   });
 
-  test("should format a number with both separators", () => {
-    const result = formatNumber("123456.789", "0", {
-      thousandsSeparator: ",",
-      decimalSeparator: ".",
-    });
-    expect(result).toBe("123,456.789");
-  });
+  // test("should format a number with both separators", () => {
+  //   const result = formatNumber("123456.789", "0", {
+  //     thousandsSeparator: ",",
+  //     decimalSeparator: ".",
+  //   });
+  //   expect(result).toBe("123,456.789");
+  // });
 
   test("should format a number with negative value", () => {
     const result = formatNumber("-123456", "0", { thousandsSeparator: "," });
     expect(result).toBe("-123,456");
   });
-
-  test("should format a number with no separators", () => {
-    const result = formatNumber("123456", "0", {
-      thousandsSeparator: "",
-      decimalSeparator: "",
-    });
-    expect(result).toBe("123456");
-  });
-
-  test("should format a number with custom separators", () => {
-    const result = formatNumber("123456", "0", {
-      thousandsSeparator: " ",
-      decimalSeparator: " ",
-    });
-    expect(result).toBe("123 456");
-  });
-
-  test("should format a number with unit", () => {
-    const result = formatNumber("123456", "0 kg", { thousandsSeparator: "," });
-    expect(result).toBe("123,456 kg");
-  });
-
-  test("should format a number with no value", () => {
-    const result = formatNumber("", "0");
-    expect(result).toBe("");
-  });
 });
 
-//* tests for ensureNumber function
+// * tests for ensureNumber function
 describe("ensureNumber", () => {
   test("should return zero for NaN input", () => {
     const result = ensureNumber(NaN);

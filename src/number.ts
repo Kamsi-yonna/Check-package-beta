@@ -98,31 +98,42 @@ export const addUnit = (num: number, config: Record<string, any>) => {
  * @param {string} decimalSeparator - The character to use as the decimal separator
  * @returns {string} The formatted number string with separators added
  */
-
 export const addSeparators = (
   num: string,
   base: string,
   thousandsSeparator: string,
   decimalSeparator: string
-) => {
+): string => {
+  if (
+    typeof num !== "string" ||
+    typeof base !== "string" ||
+    typeof thousandsSeparator !== "string" ||
+    typeof decimalSeparator !== "string"
+  ) {
+    throw new Error("Invalid input. All parameters must be strings.");
+  }
+
   const regex = /(\d+)(\d{3})/;
-  const string = num.toString();
-  const x = string.split(".");
-  let x1 = x[0];
-  const x2 = x.length > 1 ? decimalSeparator + x[1] : "";
+  const [integerPart, decimalPart = ""] = num.split(".");
+  let formattedIntegerPart = integerPart;
 
   switch (base) {
     case "":
-      x1 = "";
+      formattedIntegerPart = "";
       break;
     case "0,0":
-      while (regex.test(x1))
-        x1 = x1.replace(regex, `$1${thousandsSeparator}$2`);
-
+      while (regex.test(formattedIntegerPart)) {
+        formattedIntegerPart = formattedIntegerPart.replace(
+          regex,
+          `$1${thousandsSeparator}$2`
+        );
+      }
       break;
   }
 
-  return x1 + x2;
+  return (
+    formattedIntegerPart + (decimalPart ? decimalSeparator + decimalPart : "")
+  );
 };
 
 /**
@@ -177,16 +188,21 @@ export const formatNumber = (
 };
 
 /**
- * @returns {number} Returns zero or provided min instead of NAN or just return number
+ * Ensures the input value is a number and optionally enforces a minimum value.
+ * @param {any} value - The input value to ensure as a number.
+ * @param {number | null} min - The optional minimum value to enforce.
+ * @returns {number} - The processed number value.
  */
-
 export const ensureNumber = (value: any, min: number | null = null): number => {
-  value = Number.isNaN(value) ? 0 : value;
-  if (min) value = Math.max(min, value);
+  let processedValue = typeof value === "number" ? value : parseFloat(value);
+  processedValue = Number.isNaN(processedValue) ? 0 : processedValue;
 
-  return value;
+  if (min !== null && !Number.isNaN(min)) {
+    processedValue = Math.max(min, processedValue);
+  }
+
+  return processedValue;
 };
-
 /**
  * @param {string} value
  * @returns {any} Returns a default value set for when a value is zero or NAN.
