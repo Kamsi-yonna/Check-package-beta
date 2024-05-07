@@ -61,7 +61,6 @@ export {
   toLowerCase,
   toUpperCase,
   trim,
-  truncate,
 } from "../src/string";
 
 export {
