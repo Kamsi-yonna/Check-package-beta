@@ -22,7 +22,6 @@
 //   isArrEmpty: arrayUtils.isArrEmpty,
 //   pushOrUpdate: arrayUtils.pushOrUpdate,
 //   pushUniqueValue: arrayUtils.pushUniqueValue,
-//   roundData: arrayUtils.roundData,
 
 //   formatDate: dateUtils.formatDate,
 //   fromNow: dateUtils.fromNow,
@@ -63,13 +62,7 @@ export {
   trim,
 } from "../src/string";
 
-export {
-  isArr,
-  isArrEmpty,
-  pushOrUpdate,
-  pushUniqueValue,
-  roundData,
-} from "../src/array";
+export { isArr, isArrEmpty, pushOrUpdate, pushUniqueValue } from "../src/array";
 
 export { formatDate, fromNow, toNow } from "../src/date";
 
