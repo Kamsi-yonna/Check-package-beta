@@ -40,14 +40,14 @@ export const pushUniqueValue = <T>(
  * @returns {T[]} - The processed array with a length that is a multiple of the floor value.
  */
 
-export const roundData = <T>(dataArray: T[] | undefined | null, floor = 4) => {
-  if (!dataArray) return [];
+// export const roundData = <T>(dataArray: T[] | undefined | null, floor = 4) => {
+//   if (!dataArray) return [];
 
-  if (dataArray.length > floor)
-    return dataArray.slice(0, Math.floor(dataArray.length / floor) * floor);
+//   if (dataArray.length > floor)
+//     return dataArray.slice(0, Math.floor(dataArray.length / floor) * floor);
 
-  return dataArray;
-};
+//   return dataArray;
+// };
 
 export const pushOrUpdate = <T>(arr: T[], value: T, key: keyof T) => {
   const foundIndex = arr.findIndex((item) => item[key] === value[key]);

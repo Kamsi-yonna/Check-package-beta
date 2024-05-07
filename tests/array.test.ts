@@ -1,10 +1,4 @@
-import {
-  isArr,
-  isArrEmpty,
-  pushOrUpdate,
-  pushUniqueValue,
-  roundData,
-} from "../src/array";
+import { isArr, isArrEmpty, pushOrUpdate, pushUniqueValue } from "../src/array";
 
 //* tests for isArr function
 describe("isArr function", () => {
@@ -103,40 +97,40 @@ describe("pushUniqueValue function", () => {
 });
 
 //* tests for roundData function
-describe("roundData function", () => {
-  test("should return an empty array for undefined or null input", () => {
-    expect(roundData(undefined)).toEqual([]);
-    expect(roundData(null)).toEqual([]);
-  });
+// describe("roundData function", () => {
+//   test("should return an empty array for undefined or null input", () => {
+//     expect(roundData(undefined)).toEqual([]);
+//     expect(roundData(null)).toEqual([]);
+//   });
 
-  test("should return the original array if the length is less than or equal to the floor", () => {
-    const arr1 = [1, 2, 3];
-    expect(roundData(arr1)).toEqual([1, 2, 3]);
+//   test("should return the original array if the length is less than or equal to the floor", () => {
+//     const arr1 = [1, 2, 3];
+//     expect(roundData(arr1)).toEqual([1, 2, 3]);
 
-    const arr2 = [1, 2, 3, 4];
-    expect(roundData(arr2)).toEqual([1, 2, 3, 4]);
-  });
+//     const arr2 = [1, 2, 3, 4];
+//     expect(roundData(arr2)).toEqual([1, 2, 3, 4]);
+//   });
 
-  test("should round the array length to a multiple of the floor", () => {
-    const arr1 = [1, 2, 3, 4, 5, 6, 7, 8];
-    expect(roundData(arr1)).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
+//   test("should round the array length to a multiple of the floor", () => {
+//     const arr1 = [1, 2, 3, 4, 5, 6, 7, 8];
+//     expect(roundData(arr1)).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
 
-    const arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-    expect(roundData(arr2)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
+//     const arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+//     expect(roundData(arr2)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
 
-    const arr3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
-    expect(roundData(arr3)).toEqual([
-      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
-    ]);
-  });
+//     const arr3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+//     expect(roundData(arr3)).toEqual([
+//       1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+//     ]);
+//   });
 
-  test("should round the array length to a multiple of the specified floor", () => {
-    const arr1 = [
-      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
-    ];
-    expect(roundData(arr1, 6)).toEqual([1, 2, 3, 4, 5, 6]);
-  });
-});
+//   test("should round the array length to a multiple of the specified floor", () => {
+//     const arr1 = [
+//       1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+//     ];
+//     expect(roundData(arr1, 6)).toEqual([1, 2, 3, 4, 5, 6]);
+//   });
+// });
 
 //* tests for pushOrUpdate function
 describe("pushOrUpdate function", () => {
