@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && generate-readme.js",
     "test": "jest"
   },
   "keywords": [],
