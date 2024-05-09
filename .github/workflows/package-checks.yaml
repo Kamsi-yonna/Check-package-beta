@@ -52,8 +52,9 @@ jobs:
           npm config set '//npm.pkg.github.com/:username' 'Kamsi-yonna'
 
       - name: npm login
-        run: git config --global user.name ${{ secrets.USER_NAME }}
-          git config --global user.email ${{ secrets.USER_EMAIL }}
+        run: |
+          git config --global user.name "${{ secrets.USER_NAME }}"
+          git config --global user.email "${{ secrets.USER_EMAIL }}"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
