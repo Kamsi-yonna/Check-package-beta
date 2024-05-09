@@ -1,5 +1,5 @@
 {
-  "name": "sample-utils",
+  "name": "cpb-utils",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup && node generate-readme.js",
+    "build": "tsup",
     "test": "jest"
   },
   "keywords": [],
