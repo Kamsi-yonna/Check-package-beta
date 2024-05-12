@@ -16,7 +16,7 @@ The TS-Utils package uses [Jest](https://jestjs.io/), a popular testing framewor
 To write tests for your contributions, create a new test file in the `test` folder, following the naming convention of `<category>.test.ts`. For example, if you're adding a new utility function to the `array` category, create/add to the file named `array.test.ts`\
 Inside the test file, write your tests using Jest's testing syntax. Here's an example of how to structure a test for a `chunk` function in the `array` category:
 
-```
+```typescript
 typescript
 import { chunk } from '../src/array';
 
@@ -31,14 +31,14 @@ describe('chunk', () => {
 
 To run the tests for a specific utility category, use the following command:
 
-```
+```bash
 bash
 pnpm test --array.test.ts
 ```
 
 To run all the tests for the entire TS-Utils package, use the following command:
 
-```
+```bash
 bash
 pnpm jest
 ```

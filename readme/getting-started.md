@@ -44,11 +44,11 @@ Once you have the package installed, you can import the specific utility functio
 
 ```typescript
 // Import the specific method category you need
-import { chunk, formatDate, capitalize } from "kam-utils1000/array.ts";
-import { roundNum, clampNum } from "kam-utils1000/number.ts";
+import { chunk, formatDate, capitalize } from "check-engineering/ts-utils/array.ts";
+import { roundNum, clampNum } from "check-engineering/ts-utils/number.ts";
 
 // OR 
 
 // Import all utilities
-import { formatDate, roundNum } from "kam-utils1000";
+import { formatDate, roundNum } from "check-engineering/ts-utils";
 ```
