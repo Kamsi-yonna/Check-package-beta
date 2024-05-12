@@ -20,7 +20,7 @@ typescript
 import { formatDate } from 'check-engineengineering/ts-utils';
 
 const date = new Date('2023-02-14');
-const formattedDate = formatDate(date, 'YYYY-MM-DD'); // Output: "2023-02-14"
+const formattedDate = formatDate(date, 'YYYY-MM-DD'); // => "2023-02-14"
 ```
 
 ### Usage
@@ -30,7 +30,7 @@ typescript
 import { formatDate } from 'check-engineengineering/ts-utils';
 
 const date = '2024-06-30';
-const formattedDate = formatDate(date, 'DD/MM/YYYY'); // Output: "30/06/2024"
+const formattedDate = formatDate(date, 'DD/MM/YYYY'); // => "30/06/2024"
 ```
 
 ### Notes

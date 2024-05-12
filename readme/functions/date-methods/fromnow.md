@@ -19,7 +19,7 @@ typescript
 import { fromNow } from 'check-engineengineering/ts-utils';
 
 const futureDate = new Date('2025-12-31');
-const relativeTime = fromNow(futureDate); // Example output: "In 1 year"
+const relativeTime = fromNow(futureDate); // Example => "In 1 year"
 ```
 
 ### Usage

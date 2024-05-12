@@ -21,8 +21,8 @@ import { toNow } from 'check-engineering/ts-utils';
 const pastDate = new Date('2023-01-01');
 const futureDate = '2025-12-31';
 
-console.log(toNow(pastDate)); // Example output: "2 years ago"
-console.log(toNow(futureDate)); // Example output: "In 1 year"
+console.log(toNow(pastDate)); // => "2 years ago"
+console.log(toNow(futureDate)); // => "In 1 year"
 ```
 
 ### Usage

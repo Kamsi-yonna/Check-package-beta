@@ -1,6 +1,6 @@
 # Date Methods
 
-* toNow
-* formatDate
-* fromNow
+* [toNow](tonow.md)
+* [formatDate](formatdate.md)
+* [fromNow](fromnow.md)
 
