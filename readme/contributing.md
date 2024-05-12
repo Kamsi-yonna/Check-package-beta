@@ -30,7 +30,7 @@ To contribute, please follow these steps:
 6. Submit your changes as a pull request to the main repository, including a detailed description of the changes and how they address the issue or enhancement.
 7. Respond to feedback by engaging with the project maintainers and other contributors.
 
-**Important: Before pushing your final code, make sure to run `pnpm build` to generate the updated README file.**&#x20;
+**Important: Before pushing your final code, make sure to run `pnpm build` to generate an updated README file.**&#x20;
 
 \
 By following these steps and ensuring the README is up to date, you can help ensure that your contributions are well-received and effectively integrated into the project.

@@ -5,8 +5,8 @@
 ## Table of Contents
 
 * [Introduction](getting-started.md#introduction)
-* Installation
-* Usage
+* [Installation](getting-started.md#installation)
+* [Usage](getting-started.md#usage)
 
 ***
 

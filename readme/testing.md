@@ -36,7 +36,7 @@ bash
 pnpm test --array.test.ts
 ```
 
-To run all the tests for the TS-Utils package, use the following command:
+To run all the tests for the entire TS-Utils package, use the following command:
 
 ```
 bash
