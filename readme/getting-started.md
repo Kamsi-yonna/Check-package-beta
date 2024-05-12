@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-* Introduction
+* [Introduction](getting-started.md#introduction)
 * Installation
 * Usage
 
@@ -20,7 +20,7 @@ The Ts-Utils is particularly useful for projects that require frequent data mani
 
 ***
 
-## Installation
+## [Installation](getting-started.md#installation)
 
 The library is available as an [npm package](https://www.npmjs.com/package/@check-engineering/ts-utils).
 
@@ -38,7 +38,7 @@ These commands will fetch and install the TS-Utils package from the package regi
 
 ***
 
-### Usage
+### [Usage](getting-started.md#usage)
 
 Once you have the package installed, you can import the specific utility functions you need using the ES6 import statement. Here's an example of how to import the package and use:
 
