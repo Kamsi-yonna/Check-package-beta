@@ -19,7 +19,7 @@ Formats the input number string by adding thousands and decimal separators based
 
 ```typescript
 typescript
-import { addSeparators } from 'check-engineengineering/ts-utils';
+import { addSeparators } from 'check-engineering/ts-utils';
 
 const numberString = "1234567.89";
 const base = "0,0";
@@ -32,7 +32,7 @@ const formattedNumber = addSeparators(numberString, base, thousandsSeparator, de
 
 ```typescript
 typescript
-import { addSeparators } from 'check-engineengineering/ts-utils';
+import { addSeparators } from 'check-engineering/ts-utils';
 
 const value = "9876543.21";
 const base = "";

@@ -17,7 +17,7 @@ The `formatDate` function takes a date and a format string as input and returns 
 
 ```typescript
 typescript
-import { formatDate } from 'check-engineengineering/ts-utils';
+import { formatDate } from 'check-engineering/ts-utils';
 
 const date = new Date('2023-02-14');
 const formattedDate = formatDate(date, 'YYYY-MM-DD'); // => "2023-02-14"
@@ -27,7 +27,7 @@ const formattedDate = formatDate(date, 'YYYY-MM-DD'); // => "2023-02-14"
 
 ```typescript
 typescript
-import { formatDate } from 'check-engineengineering/ts-utils';
+import { formatDate } from 'check-engineering/ts-utils';
 
 const date = '2024-06-30';
 const formattedDate = formatDate(date, 'DD/MM/YYYY'); // => "30/06/2024"

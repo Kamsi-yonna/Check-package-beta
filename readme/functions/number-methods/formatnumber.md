@@ -18,7 +18,7 @@ Formats the input value into a specified format with separators and units based 
 
 ```typescript
 typescript
-import { formatNumber } from 'check-engineengineering/ts-utils';
+import { formatNumber } from 'check-engineering/ts-utils';
 
 const inputValue = 1234567.89;
 const format = "0,0.00";
@@ -30,7 +30,7 @@ const formattedValue = formatNumber(inputValue, format, formattingOptions); // O
 
 ```typescript
 typescript
-import { formatNumber } from 'check-engineengineering/ts-utils';
+import { formatNumber } from 'check-engineering/ts-utils';
 
 const inputValue = "9876543.21";
 const format = "0,0.00";

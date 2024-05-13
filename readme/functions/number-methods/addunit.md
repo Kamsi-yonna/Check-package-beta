@@ -19,7 +19,7 @@ Formats the input number by adding a unit based on the provided configuration. I
 
 ```typescript
 typescript
-import { addUnit } from 'check-engineengineering/ts-utils';
+import { addUnit } from 'check-engineering/ts-utils';
 
 const number = 42.12345;
 const config = { decimals: 2, unit: 'kg' };
@@ -30,7 +30,7 @@ const formattedNumber = addUnit(number, config); // Output: "42.12 kg"
 
 ```typescript
 typescript
-import { addUnit } from 'check-engineengineering/ts-utils';
+import { addUnit } from 'check-engineering/ts-utils';
 
 const value = 123.456;
 const options = { decimals: 1, unit: 'm/s' };

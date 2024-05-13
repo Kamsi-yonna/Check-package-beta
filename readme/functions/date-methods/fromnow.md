@@ -16,7 +16,7 @@ The `fromNow` function calculates the relative time difference between the provi
 
 ```typescript
 typescript
-import { fromNow } from 'check-engineengineering/ts-utils';
+import { fromNow } from 'check-engineering/ts-utils';
 
 const futureDate = new Date('2025-12-31');
 const relativeTime = fromNow(futureDate); // Example => "In 1 year"
@@ -26,7 +26,7 @@ const relativeTime = fromNow(futureDate); // Example => "In 1 year"
 
 ```typescript
 typescript
-import { fromNow } from 'check-engineengineering/ts-utils';
+import { fromNow } from 'check-engineering/ts-utils';
 
 const eventDate = '2026-06-30';
 

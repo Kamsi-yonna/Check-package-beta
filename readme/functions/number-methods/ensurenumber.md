@@ -17,7 +17,7 @@ Takes an input value and ensures it is a valid number. If the input is invalid, 
 
 ```typescript
 typescript
-import { ensureNumber } from 'check-engineengineering/ts-utils';
+import { ensureNumber } from 'check-engineering/ts-utils';
 
 const validInput = 42;
 const invalidInput = "invalid";
@@ -31,7 +31,7 @@ const fallbackNumber = ensureNumber(invalidInput, minValue); // => 0
 
 ```typescript
 typescript
-import { ensureNumber } from 'check-engineengineering/ts-utils';
+import { ensureNumber } from 'check-engineering/ts-utils';
 
 const userInput = document.getElementById('user-input').value;
 const minAllowed = 1;

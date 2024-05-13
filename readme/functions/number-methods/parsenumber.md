@@ -19,7 +19,7 @@ Parses the input number or string and returns an object containing the float, in
 
 ```typescript
 typescript
-import { parseNumber } from 'check-engineengineering/ts-utils';
+import { parseNumber } from 'check-engineering/ts-utils';
 
 const numberString = "-3.14";
 const parsedNumber = parseNumber(numberString); // => { float: 3.14, int: 3, sign: "-" }
@@ -29,7 +29,7 @@ const parsedNumber = parseNumber(numberString); // => { float: 3.14, int: 3, sig
 
 ```typescript
 typescript
-import { parseNumber } from 'check-engineengineering/ts-utils';
+import { parseNumber } from 'check-engineering/ts-utils';
 
 const number = 42;
 const parsedNumber = parseNumber(number); // => { float: 42, int: 42, sign: "" }

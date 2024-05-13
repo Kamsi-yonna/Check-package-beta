@@ -16,20 +16,20 @@ Creates a deep copy of the input object, including all nested objects and arrays
 
 ```typescript
 typescript
-import { deepClone } from 'check-engineengineering/ts-utils';
+import { deepClone } from 'check-engineering/ts-utils';
 
 const originalObject = { name: 'Alice', age: 30, hobbies: ['reading', 'painting'] };
-const clonedObject = deepClone(originalObject);
+const clonedObject = deepClone(originalObject); // => { name: 'Alice', age: 30, hobbies: ['reading', 'painting'] }
 ```
 
 ### Usage
 
 ```typescript
 typescript
-import { deepClone } from 'check-engineengineering/ts-utils';
+import { deepClone } from 'check-engineering/ts-utils';
 
 const data = { key: 'value', nested: { subkey: 'subvalue' } };
-const clonedData = deepClone(data);
+const clonedData = deepClone(data); // => { key: 'value', nested: { subkey: 'subvalue' } }
 ```
 
 ### Notes

@@ -17,7 +17,7 @@ Formats the input number to a specified precision by rounding it to the specifie
 
 ```typescript
 typescript
-import { toFixed } from 'check-engineengineering/ts-utils';
+import { toFixed } from 'check-engineering/ts-utils';
 
 const number = 3.14159;
 const formattedNumber = toFixed(number, 2); // => "3.14"
@@ -27,7 +27,7 @@ const formattedNumber = toFixed(number, 2); // => "3.14"
 
 ```typescript
 typescript
-import { toFixed } from 'check-engineengineering/ts-utils';
+import { toFixed } from 'check-engineering/ts-utils';
 
 const price = 19.99;
 const roundedPrice = toFixed(price, 1); // => "20.0"

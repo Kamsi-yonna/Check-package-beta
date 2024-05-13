@@ -17,7 +17,7 @@ Takes an input value and a fallback format as arguments. It checks if the input 
 
 ```typescript
 typescript
-import { numberEmptyState } from 'check-engineengineering/ts-utils';
+import { numberEmptyState } from 'check-engineering/ts-utils';
 
 const validInput = 42;
 const invalidInput = "NaN";
@@ -29,16 +29,15 @@ const fallbackDisplay = numberEmptyState(invalidInput, fallbackFormat); // Outpu
 
 ### Usage
 
-```typescript
-typescript
-import { numberEmptyState } from 'check-engineengineering/ts-utils';
-
+<pre class="language-typescript"><code class="lang-typescript">typescript
+<strong>import { numberEmptyState } from 'check-engineering/ts-utils';
+</strong>
 const userInput = document.getElementById('user-input').value;
 const fallbackDisplay = "N/A";
 
-const safeDisplay = numberEmptyState(userInput, fallbackDisplay);
+const safeDisplay = numberEmptyState(userInput, fallbackDisplay); // => "N/A"
 document.getElementById('display').innerHTML = safeDisplay;
-```
+</code></pre>
 
 ### Notes
 

@@ -17,24 +17,24 @@ Parses a JSON string into a specified type `T`. If the parsing fails or the inpu
 
 ```typescript
 typescript
-import { parseJSON } from 'check-engineengineering/ts-utils';
+import { parseJSON } from 'check-engineering/ts-utils';
 
 const jsonString = '{"name": "Alice", "age": 30}';
 const defaultData = { name: "Unknown", age: 0 };
 
-const parsedData = parseJSON<{ name: string, age: number }>(jsonString, defaultData);
+const parsedData = parseJSON<{ name: string, age: number }>(jsonString, defaultData); // => { name: "Alice", age: 30 }
 ```
 
 ### Usage
 
 ```typescript
 typescript
-import { parseJSON } from 'check-engineengineering/ts-utils';
+import { parseJSON } from 'check-engineering/ts-utils';
 
 const jsonData = '{"key": "value"}';
 const defaultObject = { key: "default" };
 
-const parsedObject = parseJSON<{ key: string }>(jsonData, defaultObject);
+const parsedObject = parseJSON<{ key: string }>(jsonData, defaultObject); // => { key: "value" }
 ```
 
 ### Notes

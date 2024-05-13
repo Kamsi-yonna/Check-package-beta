@@ -20,7 +20,7 @@ Parses the input string or number and returns an object containing the sign, bas
 
 ```typescript
 typescript
-import { parseFormat } from 'check-engineengineering/ts-utils';
+import { parseFormat } from 'check-engineering/ts-utils';
 
 const formattedString = "+123.45%";
 const parsedFormat = parseFormat(formattedString); // => { sign: "+", base: "123", decimals: 2, unit: "%" }
@@ -30,7 +30,7 @@ const parsedFormat = parseFormat(formattedString); // => { sign: "+", base: "123
 
 ```typescript
 typescript
-import { parseFormat } from 'check-engineengineering/ts-utils';
+import { parseFormat } from 'check-engineering/ts-utils';
 
 const formattedNumber = 42.0;
 const parsedFormat = parseFormat(formattedNumber); // => { sign: "+", base: "42", decimals: 1, unit: "" }
